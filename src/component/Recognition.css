@@ -1,0 +1,105 @@
+
+ .mircophone-container {
+    /* display: flex; */
+    margin-top: -20px;
+    justify-content: center;
+    align-items: left;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1px;
+  }
+  .microphone-icon-container {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-image: linear-gradient(128deg, #ffffff, #17b403);
+    padding: 10px;
+    margin-right: 20px;
+    position: relative;
+    top: 60px;
+    cursor: pointer;
+  } 
+  .microphone-icon-container.listening::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff81;
+    position: absolute;
+    left:20%;
+    transform:translate(-50%, -50%) scale(1.4);
+    border-radius: 50%;
+    animation: listening infinite 1.5s;
+  }
+  @keyframes listening{
+    0%{
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .microphone-icon {
+    width: 100%;
+    height: 100%;
+  }
+  .microphone-status {
+    font-size: 22px;
+    padding-top: -0px;
+    margin-right: 20px;
+    min-width: 215px;
+  }
+  .btn {
+    border: none;
+    padding: 10px 10px;
+    margin-left: 0px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    padding-top: 0px;
+
+    box-shadow: 0px 0px 10px 5px #ffffff1a;
+  }
+  .microphone-result-container {
+    height: 5px;
+    width: 150px;
+    border:2px solid;
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  
+  }
+  .microphone-result-text {
+    width: 70vw;
+    overflow-y: auto;
+  }
+  .microphone-reset {
+    border: 1px solid #fff;
+    background: none;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-image: linear-gradient(128deg, #f32222, #f5020eda);
+    padding: 10px;
+    position: relative;
+    top: -14px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+ .microphone-stop {
+    border: 1px solid #fff;
+    background: none;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    position: relative;
+    top: 85px;
+    margin-left: -10px;
+    cursor: pointer;
+  }

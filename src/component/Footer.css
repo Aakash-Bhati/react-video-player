@@ -1,0 +1,19 @@
+.Footer {
+    background-color: #ffffff;
+    min-height: 80px;
+    border-style: outset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+  }
+
+  .Footer h5 {
+      padding-top: 10px;
+      font-size: 20px;
+  }
+  .Footer p {
+      padding-top: 0px;
+      font-size: 10px;
+  }
